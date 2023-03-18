@@ -1,0 +1,38 @@
+{% extends 'root.html' %}
+{% include 'header.html' %}
+
+{% block title %} Adding User {% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div>
+        <div class ="col-md-12"> User List </div>
+    </div>
+<div>
+    <table class="table">
+        <thead style="background-color: aqua;color: blueviolet;">
+            <th>User ID</th>
+            <th>User Name</th>
+            <th>User Points</th>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{user.user_id}}</td>
+                <td>{{user.user_name}}</td>
+                <td>{{user.user_points}}</td>
+                <td></td>
+            </tr>
+            {%endfor%}
+        </tbody>
+
+        </table>
+
+     </table>
+
+</div>
+</div>
+
+{% endblock %}

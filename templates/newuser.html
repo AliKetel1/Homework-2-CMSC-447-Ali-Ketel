@@ -1,0 +1,33 @@
+{% extends 'root.html' %}
+{% include 'header.html' %}
+
+{% block title %} Adding User {% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <form method="post" action="">
+        <table class="table">
+        <tr>
+            <td>User ID</td>
+            <td><input type="text" user_id="user_id" class="form-control"></td>
+        </tr>
+        <tr>
+            <td>User Name</td>
+            <td><input type="text" user_name="user_name" class="form-control"></td>
+        </tr>
+        <tr>
+            <td>User Points</td>
+            <td><input type="text" user_points="user_points" class="form-control"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="Finish" name="Finish" value="Finish" class="btn btn-warning">
+            </td>
+        </table>
+    </form>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,1 @@
+The newuser page lets you input user information and then the Database.db gets the user uploaded there, and you get redirected to the home page which displays all users and allows you to delete them if needed.
